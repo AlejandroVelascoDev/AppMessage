@@ -41,14 +41,17 @@
     "e2e-test": "maestro test .maestro/ -e APP_ID=com.obytes.development"
   },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.4.2",
     "@expo/metro-runtime": "^5.0.4",
     "@gorhom/bottom-sheet": "^5.0.5",
     "@hookform/resolvers": "^3.9.0",
+    "@react-native-async-storage/async-storage": "^3.0.2",
     "@shopify/flash-list": "1.7.6",
     "@tanstack/react-query": "^5.52.1",
     "app-icon-badge": "^0.1.2",
     "axios": "^1.7.5",
     "expo": "~53.0.12",
+    "expo-blur": "^15.0.8",
     "expo-constants": "~17.1.6",
     "expo-crypto": "^14.1.5",
     "expo-dev-client": "~5.2.1",
@@ -155,5 +158,8 @@
   },
   "osMetadata": {
     "initVersion": "8.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --fix"
   }
 }

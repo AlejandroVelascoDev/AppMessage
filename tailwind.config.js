@@ -9,7 +9,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter'],
+        inter: ['Inter_400Regular', 'sans-serif'],
+        'inter-medium': ['Inter_500Medium', 'sans-serif'],
+        'inter-semibold': ['Inter_600SemiBold', 'sans-serif'],
+        'inter-bold': ['Inter_700Bold', 'sans-serif'],
       },
       colors,
     },
