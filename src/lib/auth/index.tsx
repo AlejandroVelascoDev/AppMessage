@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 
+import { clearToken } from '@/lib/token';
 import { createSelectors } from '../utils';
 import type { TokenType } from './utils';
 import { getToken, removeToken, setToken } from './utils';
@@ -21,6 +22,7 @@ const _useAuth = create<AuthState>((set, get) => ({
   },
   signOut: () => {
     removeToken();
+    clearToken();
     set({ status: 'signOut', token: null });
   },
   hydrate: () => {
